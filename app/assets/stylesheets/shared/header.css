@@ -39,6 +39,7 @@
   cursor: pointer;
   background-color: #66CC66;
   padding: 8px;
+  margin-left: 5px;
 }
 
 .search-icon {
@@ -59,7 +60,7 @@
 
 .user-nickname {
   text-decoration: none;
-  margin-right: 3vw;
+  margin-right: 2vw;
   color: white;
   border: 1px solid #66CC66;
   border-radius: 7px;
@@ -80,7 +81,7 @@
 
 .login {
   text-decoration: none;
-  margin-right: 3vw;
+  margin-right: 2vw;
   color: white;
   border: 1px solid #66CC66;
   border-radius: 7px;
