@@ -1,9 +1,10 @@
 class CreateQuestions < ActiveRecord::Migration[6.0]
   def change
     create_table :questions do |t|
+      t.text       :title,           null: false
       t.text       :content
       t.integer    :prefectures_id,  null: false
-      t.integer    :narrow_id 
+      t.integer    :narrow_id,       null: false
       t.integer    :genre_id,        null: false
       t.integer    :budget_id 
       t.integer    :situation_id 

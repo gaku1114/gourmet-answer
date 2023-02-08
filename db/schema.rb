@@ -13,9 +13,10 @@
 ActiveRecord::Schema.define(version: 2023_02_02_151128) do
 
   create_table "questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "title", null: false
     t.text "content"
     t.integer "prefectures_id", null: false
-    t.integer "narrow_id"
+    t.integer "narrow_id", null: false
     t.integer "genre_id", null: false
     t.integer "budget_id"
     t.integer "situation_id"
@@ -34,8 +35,6 @@ ActiveRecord::Schema.define(version: 2023_02_02_151128) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "questions", "users"

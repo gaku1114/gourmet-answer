@@ -14,9 +14,10 @@
 
 | Column         | Type       | Options                        |
 | -------------- | ---------- | ------------------------------ |
-| content        | text       | null: false                    |
+| title          | text       | null: false                    |
+| content        | text       |                                |
 | prefectures_id | integer    | null: false                    |
-| narrow_id      | integer    |                                |
+| narrow_id      | integer    | null: false                    |
 | genre_id       | integer    | null: false                    |
 | budget_id      | integer    |                                |
 | situation_id   | integer    |                                |
