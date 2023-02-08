@@ -15,11 +15,10 @@ ActiveRecord::Schema.define(version: 2023_02_02_151128) do
   create_table "questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "title", null: false
     t.text "content"
-    t.integer "prefectures_id", null: false
+    t.integer "prefecture_id", null: false
     t.integer "narrow_id", null: false
     t.integer "genre_id", null: false
-    t.integer "budget_id"
-    t.integer "situation_id"
+    t.integer "situation_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
