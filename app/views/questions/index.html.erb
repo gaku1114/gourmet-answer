@@ -1,3 +1,17 @@
 <%= render "shared/header"%>
 
-<div class="">
+<div class="question-index-main">
+  <% @questions.each do |question| %>
+  <div class="question-index-title">
+    <%= question.title %>
+  </div>
+
+  <div class="question-index-prefecture">
+    <%= question.prefecture.name %>
+  </div>
+
+  <div class="question-index-genre">
+    <%= question.genre.name %>
+  </div>
+  <% end %>
+</div>
