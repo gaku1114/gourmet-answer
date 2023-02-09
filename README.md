@@ -19,8 +19,7 @@
 | prefectures_id | integer    | null: false                    |
 | narrow_id      | integer    | null: false                    |
 | genre_id       | integer    | null: false                    |
-| budget_id      | integer    |                                |
-| situation_id   | integer    |                                |
+| situation_id   | integer    | null: false                    |
 | user           | references | null: false, foreign_key: true |
 
 - belongs_to :user
@@ -33,7 +32,7 @@
 | -------- | ---------- | ------------------------------ |
 | name     | string     | null: false                    |
 | content  | text       |                                |
-| url      | string     |                                |
+| taberogu | string     |                                |
 | user     | references | null: false, foreign_key: true |
 | question | references | null: false, foreign_key: true |
 

@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2023_02_02_151128) do
     t.text "title", null: false
     t.text "content"
     t.integer "prefecture_id", null: false
-    t.integer "narrow_id", null: false
     t.integer "genre_id", null: false
     t.integer "situation_id", null: false
     t.bigint "user_id", null: false

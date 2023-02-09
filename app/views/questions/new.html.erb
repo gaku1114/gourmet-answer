@@ -1,0 +1,50 @@
+<%= render "shared/header"%>
+
+<div class="new-question-main">
+  <h2 class="new-question-title">質問を作成する</h2>
+  <%= form_with model: @question, local: true do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <%# 質問タイトル %>
+    <div class="question-title">
+      <div class="weight^-bold-text">
+        質問タイトル
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :title, class:"question-title-space", placeholder:"(例)渋谷のおすすめの定食屋を教えて欲しい！" %>
+    </div>
+
+    <%# 都道府県 %>
+    <div class="weight-bold-text">
+      場所
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"question-prefecture"}) %> 
+    
+    <%# ジャンル %>
+    <div class="weight-bold-text">
+      ジャンル
+    </div>
+    <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"question-genre"}) %>
+
+    <%# シチュエーション %>
+    <div class="weight-bold-text">
+      誰と行く？
+    </div>
+    <%= f.collection_select(:situation_id, Situation.all, :id, :name, {}, {class:"select-box", id:"question-situation"}) %>
+
+    <%# その他 %>
+    <div class="weight-bold-text">
+      その他
+    </div>
+    <%= f.text_area :content, class:"question-content",  placeholder:"・個室がいい・喫煙家のお店　などなど" %>
+
+    <%# ボタン %>
+    <div class="question-btn">
+      <%= f.submit "質問する" ,class:"create-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+  <% end %>
+</div>
+
+
