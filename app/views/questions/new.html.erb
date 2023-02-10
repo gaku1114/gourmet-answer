@@ -25,31 +25,29 @@
       ----  その他条件を指定する（任意）  ----
     </div>
 
-    
-
     <%# 都道府県 %>
-      <div class="other-wrapper">
-        <div class="weight-bold-text">
-          場所
-        </div>
-        <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"question-prefecture"}) %> 
+    <div class="other-wrapper">
+      <div class="weight-bold-text">
+        場所
       </div>
+      <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"question-prefecture"}) %> 
+    </div>
 
-      <div class="other-wrapper">
-        <%# ジャンル %>
-        <div class="weight-bold-text">
-          ジャンル
-        </div>
-        <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"question-genre"}) %>
+    <%# ジャンル %>
+    <div class="other-wrapper">
+      <div class="weight-bold-text">
+        ジャンル
       </div>
+      <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"question-genre"}) %>
+    </div>
 
-      <div class="other-wrapper">
-        <%# シチュエーション %>
-        <div class="weight-bold-text">
-          誰と行く？
-        </div>
-        <%= f.collection_select(:situation_id, Situation.all, :id, :name, {}, {class:"select-box", id:"question-situation"}) %>
+    <%# シチュエーション %>
+    <div class="other-wrapper">
+      <div class="weight-bold-text">
+        誰と行く？
       </div>
+      <%= f.collection_select(:situation_id, Situation.all, :id, :name, {}, {class:"select-box", id:"question-situation"}) %>
+    </div>
   
     <%# ボタン %>
     <div class="question-btn">

@@ -58,6 +58,8 @@
 }
 
 .create-btn {
-  height: 40px;
+  height: 50px;
   width: 250px;
+  font-size: 15px;
+  font-weight: bold;
 }
