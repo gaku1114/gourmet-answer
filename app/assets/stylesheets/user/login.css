@@ -14,3 +14,8 @@
   cursor: pointer;
 }
 
+.login-flash-message {
+  text-align: center;
+  color: red;
+  font-size: 18px;
+}

@@ -2,9 +2,11 @@
 
 <div class="new-question-main">
   <%= form_with model: @question, local: true do |f| %>
-    <%= render 'shared/error_messages', model: f.object %>
     <div class="new-question-form">
     <h2 class="new-question-title">質問を作成する</h2>
+
+    <%= render 'shared/error_messages', model: f.object %>
+    
     <%# 質問タイトル %>
     <div class="form-main">
     <div class="weight-bold-text">

@@ -10,4 +10,6 @@ class Question < ApplicationRecord
     validates :genre_id
     validates :situation_id
   end
+
+  belongs_to :user
 end
