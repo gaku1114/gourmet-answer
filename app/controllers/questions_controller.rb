@@ -11,7 +11,11 @@ class QuestionsController < ApplicationController
 
   def create
     @question = Question.new(question_params)
-    @question.save
+    if @question.save
+      riderect_to root_path
+    else
+      render :new
+    end
   end
 
   private
