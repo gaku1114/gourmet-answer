@@ -1,0 +1,63 @@
+.new-question-main {
+  width: 100%;
+  min-width: 800px;
+  padding-bottom: 100px;
+}
+
+.new-question-form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 5vh 0;
+}
+
+.new-question-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.weight-bold-text {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.question-title {
+  height: 50px;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px 15px 10px 10px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.question-content {
+  height: 100px;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px 15px 10px 10px;
+  resize: none;
+}
+
+.other-title {
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.select-box {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.question-btn {
+  margin-top: 40px;
+  margin-left: 125px;
+}
+
+.create-btn {
+  height: 40px;
+  width: 250px;
+}
